@@ -14,7 +14,7 @@ Execution file, configuration file, and models are download from the [zip](https
 
 #### File structure
 ```
-TCGA_WSI_Ovary_Inv3/
+TCGA_WSI_Endo_Inv3/
 │
 ├── Data/ - training and testing data location
 │   ├── BB_tileout/
