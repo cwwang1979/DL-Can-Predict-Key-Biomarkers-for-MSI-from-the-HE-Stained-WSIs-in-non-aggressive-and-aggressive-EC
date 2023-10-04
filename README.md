@@ -10,7 +10,7 @@
 - cuDNN version >= 7.6.4
 
 #### Download
-Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1tjjqhan-iPaDCq1xvofnv4oPAN1YtXHW/view?usp=sharing) file.  (For reviewers, "..._cwlab" is the password to decompress the file.)
+Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1Zg6NodzJeDkD2y9Vu1ueS3ZePze4VzvK/view?usp=sharing) file.  (For reviewers, "..._cwlab" is the password to decompress the file.)
 
 #### File structure
 ```
