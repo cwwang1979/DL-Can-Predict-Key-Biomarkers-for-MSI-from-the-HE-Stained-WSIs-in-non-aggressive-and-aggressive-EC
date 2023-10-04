@@ -14,8 +14,7 @@ Execution file, configuration file, and models are download from the [zip](https
 
 #### File structure
 ```
-Deep Learning Can Predict Key Biomarkers for Microsatellite Instability Directly from the H&E-Stained Whole Slide Images in non-aggressive and aggressive Endometrial Cancer
-Setup/
+TCGA_WSI_Endo_Inv3/
 │
 ├── Data/ - training and testing data location
 │   ├── BB_tileout/
