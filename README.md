@@ -3,11 +3,11 @@
 
 #### Requirerements
 - ubuntu 18.04
-- RAM >= 128 GB
-- GPU Memory >= 24 GB
-- GPU driver version >= 418.152
+- RAM >= 16 GB
+- GPU Memory >= 12 GB
+- GPU driver version >= 418.56
 - CUDA version >= 10.1
-- cuDNN version >= 7.5.1
+- cuDNN version >= 7.6.4
 
 #### Download
 Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1T2tQGGSeKSjfLlqSxyoVPjQXvJ3kySg-/view?usp=sharing) file.  (For reviewers, "..._cwlab" is the password to decompress the file.)
@@ -18,14 +18,14 @@ TCGA_WSI_Ovary_Inv3/
 │
 ├── Data/ - training and testing data location
 │   ├── BB_tileout/
-│   │   ├── TCGA-04-1335-01A-01-BS1.svs/
+│   │   ├── TCGA-2E-A9G8-01.svs/
 │   │   │   ├── 10_2.bmp
 │   │   │   ├── 10_3.bmp
 │   │   │   ├── 10_4.bmp
 │   │   │   │       ⋮
 │   │   │   └── 20_11.bmp
 │   │   │
-│   │   └── TCGA-04-1342-01A-01-BS1.svs/
+│   │   └── TCGA-4E-A92E-01.svs/
 │   │       ├── 30_3.bmp
 │   │       ├── 32_1.bmp
 │   │       ├── 33_4.bmp
@@ -34,18 +34,18 @@ TCGA_WSI_Ovary_Inv3/
 │   │
 │   │
 │   └── WSI_Image/
-│       ├── TCGA-04-1335-01A-01-BS1.svs
-│       ├── TCGA-04-1342-01A-01-BS1.svs
-│       ├── TCGA-10-0928-01A-01-BS1.svs
+│       ├── TCGA-2E-A9G8-01.svs
+│       ├── TCGA-4E-A92E-01.svs
+│       ├── TCGA-A5-A0G3-01.svs
 │       │       ⋮
-│       └── TCGA-61-1730-11A-01-TS1.svs
+│       └── TCGA-5B-A90C-01.svs
 │
 ├── Preprocessing/ - Location for storing preprocessed images
-│   ├── TCGA-04-1335-01A-01-BS1.svs/
-│   │   └── TCGA-04-1335-01A-01-BS1.bmp
+│   ├── TCGA-2E-A9G8-01.svs/
+│   │   └── TCGA-2E-A9G8-01.svs.bmp
 │   │       ⋮
-│   └── TCGA-04-1342-01A-01-BS1.svs/
-│       └── TCGA-04-1342-01A-01-BS1.bmp        
+│   └── TCGA-4E-A92E-01.svs/
+│       └── TCGA-4E-A92E-01.svs.bmp        
 │
 ├── List/ - demo list
 │   ├── train.txt
