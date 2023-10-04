@@ -63,7 +63,8 @@ TCGA_WSI_Endo_Inv3/
 │
 └── Inference/ 
     ├── Model/ - demo model
-    │   └── Ovary_TCGA_MSI50%_weight_iter_1050000.caffemodel
+    │   │── G1G2.caffemodel       
+    │   └── G3.caffemodel
     ├── deploy.prototxt
     └── inference.py - execution file
 
