@@ -41,9 +41,9 @@ TCGA_WSI_Endo_Inv3/
 │       └── TCGA-5B-A90C-01.svs
 │
 ├── Preprocessing/ - Location for storing preprocessed images
-│   ├── TCGA-2E-A9G8-01.svs
+│   ├── TCGA-2E-A9G8-01.bmp
 │   │       ⋮
-│   └── TCGA-4E-A92E-01.svs
+│   └── TCGA-4E-A92E-01.bmp
 │              
 │
 ├── List/ - demo list
