@@ -72,28 +72,28 @@ TCGA_WSI_Endo_Inv3/
 
 ## Steps
 
-#### 1. Data preparation
+#### 1. Foreground Patch Selection
 Place the Whole slide image in Data/WSI_Image/.
 
 Then in a terminal run:
 ```
-./TileScale
+./FPS
 ```
 
 After running in a terminal, the result will be produced in folder named 'Data/BB_tileout', like the following structure.
 ```
 BB_tileout/
-├── TCGA-04-1335-01A-01-BS1.svs/
+├── TCGA-2E-A9G8-01.svs/
 │   ├── 10_2.bmp
 │   ├── 10_3.bmp
 │   ├── 10_4.bmp
 │   │       ⋮
 │   └── 20_11.bmp
 │   
-└── TCGA-04-1342-01A-01-BS1.svs/
-    ├──30_3.bmp
-    ├──32_1.bmp
-    ├──33_4.bmp
+└── TCGA-4E-A92E-01.svs/
+    ├── 30_3.bmp
+    ├── 32_1.bmp
+    ├── 33_4.bmp
     │       ⋮
     └── 56_11.bmp     
 ```
@@ -106,19 +106,19 @@ The content structure of the text file is as follows:
 ```
 train.txt
 │
-├── TCGA-04-1335-01A-01-BS1.svs/38_50.bmp,1
-├── TCGA-04-1342-01A-01-BS1.svs/55_20.bmp,0
-├── TCGA-10-0928-01A-01-BS1.svs/58_30.bmp,1
+├── TCGA-2E-A9G8-01.svs/38_50.bmp,1
+├── TCGA-4E-A92E-01.svs/55_20.bmp,0
+├── TCGA-A5-A0G1-01A-01-TS1.svs/58_30.bmp,1
 │        ⋮
-└── TCGA-61-1730-11A-01-TS1.svs/60_10.bmp,0
+└── TCGA-5S-A9Q8-02/60_10.bmp,0
 
 test.txt
 │
-├── TCGA-12-1335-01A-01-BS1.svs/38_50.bmp,1
-├── TCGA-16-1342-01A-01-BS1.svs/55_20.bmp,0
-├── TCGA-30-0928-01A-01-BS1.svs/58_30.bmp,1
+├── TCGA-A5-A0GV-02.svs/38_50.bmp,1
+├── TCGA-A5-A0R7-01.svs/55_20.bmp,0
+├── TCGA-A5-A0GR-01.svs/58_30.bmp,1
 │        ⋮
-└── TCGA-58-1730-11A-01-TS1.svs/60_10.bmp,0
+└── TCGA-A5-A0GW-01.svs/60_10.bmp,0
 
 ```
 
@@ -137,13 +137,13 @@ After the training is completed, use the 'Patch_selection' file to select tiles 
 
 Then in a terminal run:
 ```
-./Patch_selection train.txt
+./IPS train
 ```
-After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_train.txt.
+After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be train_IPS.txt.
 
 
 #### 5. Model Selection
-Open the Model_selection.py file to set up the storage location of training models and the location of training list("PatchSelection_train.txt") to use.
+Open the Model_selection.py file to set up the storage location of training models and the location of training list("train_IPS.txt") to use.
 
 Then in a terminal run:
 ```
@@ -152,36 +152,18 @@ python Model_selection.py
 After running in a terminal, the result will be display on the terminal window, record the model name and Copy it to the folder 'inference/Model'.
 
 
-#### 6. Data preprocessing for inference
-Utilize the 'locate' file to locate the coordinates of noise in the image.
-
-Then in a terminal run:
-```
-./locate
-```
-After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be stain_area.txt. 
-
-Next, use the 'Preprocess' file to remove noise from the tiles.
-
-Then in a terminal run:
-```
-./Preprocess
-```
-After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be Preprocessed.txt. 
-
-
-#### 7. Patch Selection for inference
+#### 6. Patch Selection for inference
 Utilize the 'Patch_selection' file to choose the tiles for inference.
 
 Then in a terminal run:
 ```
-./Patch_selection Preprocessed.txt
+./IPS test
 ```
-After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_test.txt. 
+After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be test_IPS.txt. 
 
 
-#### 8. Testing
-Open the "inference.py" file to set up the storage location of training models and the location of testing list("PatchSelection_test.txt") to use.
+#### 7. Testing
+Open the "inference.py" file to set up the storage location of training models and the location of testing list("test_IPS.txt") to use.
 
 Then in a terminal run:
 ```
