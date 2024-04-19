@@ -1,4 +1,4 @@
-# Deep Learning Can Predict Key Biomarkers for Microsatellite Instability Directly from the H&E-Stained Whole Slide Images in non-aggressive and aggressive Endometrial Cancer
+# Deep Learning to Assess Microsatellite Instability Directly from Histopathological Whole Slide Images in Endometrial Cancer
 
 ## Associated Publications
 - Wang et al. (2023) Interpretable attention-based deep learning ensemble for personalized ovarian cancer treatment without manual annotations, Computerized Medical Imaging and Graphics, https://doi.org/10.1016/j.compmedimag.2023.102233 (IF=7.422, 14/136 RADIOLOGY, NUCLEAR MEDICINE & MEDICAL IMAGING)
