@@ -1,8 +1,9 @@
 # Deep Learning to Assess Microsatellite Instability Directly from Histopathological Whole Slide Images in Endometrial Cancer
 
 ## Associated Publications
-- Wang et al. (2023) Interpretable attention-based deep learning ensemble for personalized ovarian cancer treatment without manual annotations, Computerized Medical Imaging and Graphics, https://doi.org/10.1016/j.compmedimag.2023.102233 (IF=7.422, 14/136 RADIOLOGY, NUCLEAR MEDICINE & MEDICAL IMAGING)
-- Wang et al. (2023) Ensemble biomarkers for guiding anti‐angiogenesis therapy for ovarian cancer using deep learning, Clinical and Translational Medicine, 13(1), e1162, 1-7 (IF=8.554, 41/245 ONCOLOGY)
+- Wang et al. (2023) Deep Learning Can Predict Bevacizumab Therapeutic Effect and Microsatellite Instability Directly from Histology in Epithelial Ovarian Cancer, Laboratory Investigation, 103 (11) (JCR 2022: IF=5, 14/76 Pathology)
+- Wang et al. (2023) Interpretable attention-based deep learning ensemble for personalized ovarian cancer treatment without manual annotations, Computerized Medical Imaging and Graphics, 107, 102233, 1-13 (JCR 2022: IF=5.7, 17/135 RADIOLOGY, NUCLEAR MEDICINE & MEDICAL IMAGING)
+- Wang et al. (2023) Ensemble biomarkers for guiding anti‐angiogenesis therapy for ovarian cancer using deep learning, Clinical and Translational Medicine, 13(1), e1162, 1-7 (JCR 2022: IF=10.6, 14/136 MEDICINE, RESEARCH & EXPERIMENTAL)
 
 ## Setup
 
